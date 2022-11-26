@@ -91,5 +91,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { "https://intense-tundra-82151.herokuapp.com" }
+  config.action_mailer.default_url_options = { :host => 'https://intense-tundra-82151.herokuapp.com' }
 end
