@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.feature "Projects", type: :feature do
   context "Create new project" do
     before(:each) do
+      testUser = FactoryBot.create(:user)
+      sign_in testUser
       visit new_project_path
       within("form") do
         fill_in "Title", with: "Test title"
