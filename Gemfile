@@ -86,3 +86,5 @@ end
 gem "tzinfo-data"
 
 gem 'devise'
+
+gem 'bootstrap', '~> 5.2.2'
